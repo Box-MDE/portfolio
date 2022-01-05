@@ -82,6 +82,7 @@
 .section__background2{
   height: 100vh;
   background: linear-gradient(#202020, gray);
+  color: white;
 }
 
 .section__background3{
