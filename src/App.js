@@ -1,6 +1,5 @@
 import './App.css'
 import icon from './img/icon.png'
-import png from './img/png.png'
 
 function App() {
   return (
@@ -10,7 +9,7 @@ function App() {
           <span className='navbar-brand'><h2><img src={icon} alt="logo"/>Box</h2></span>
         </nav>
       </header>
-        
+
       <section className='section__background'>
         <div className='background__assets'>
           <div className='background__assets--back'>
@@ -19,7 +18,7 @@ function App() {
             </div>
           </div>
         </div>
-      
+
         <div className='background__info'>
             <h1 className='background__info--h1'>DESARROLLO<br></br>DE PAGINAS WEB</h1>
             <p className='background__info--p'>Comienza a invertir en tu negocio expandiendo<br></br>
@@ -27,7 +26,7 @@ function App() {
             de toda la web.</p>
             <button className="background__info--button">Cotiza tu página gratis</button>
         </div>
-      
+
       </section>
     </>
   );
