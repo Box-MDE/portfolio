@@ -6837,6 +6837,15 @@ prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
+prop-types@^15.6.0:
+  version "15.8.1"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
+  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.13.1"
+
 proxy-addr@~2.0.7:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.7.tgz#f19fe69ceab311eeb94b42e70e8c2070f9ba1025"
@@ -7067,6 +7076,14 @@ react-transition-group@^4.4.2:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
+
+react-typed@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-typed/-/react-typed-1.2.0.tgz#c5fb0bea4c972545c29fceb9c1d22495b6636b58"
+  integrity sha512-aDsaA6zkjAFJs8285APOqE85l/kwJ0/ZJmBhARwUrza4TTttrMM5FcMCGEDdThdfUdHo/0l9WXmxp1m2ik4qdw==
+  dependencies:
+    prop-types "^15.6.0"
+    typed.js "^2.0.6"
 
 react@^17.0.2:
   version "17.0.2"
@@ -7312,6 +7329,11 @@ rollup@^2.43.1:
   integrity sha512-nps0idjmD+NXl6OREfyYXMn/dar3WGcyKn+KBzPdaLecub3x/LrId0wUcthcr8oZUAcZAR8NKcfGGFlNgGL1kQ==
   optionalDependencies:
     fsevents "~2.3.2"
+
+rsts@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rsts/-/rsts-1.0.0.tgz#27519559fac46a089086fa4819e8a6adbc7752e0"
+  integrity sha512-zzDh9Km/8Mo/9PGnwkl6vt9UO5ZZ/Ia4U8lDvtepSL/Yw5pUFMUrXiq45v5YazgLVBRNXG0npCLJzyThT9ufLQ==
 
 run-parallel@^1.1.9:
   version "1.2.0"
@@ -8116,6 +8138,18 @@ type-is@~1.6.18:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.24"
+
+typed.js@^2.0.6:
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/typed.js/-/typed.js-2.0.12.tgz#246aff074c8e18d32ec27acb7be15094ac0bc0e1"
+  integrity sha512-lyACZh1cu+vpfYY3DG/bvsGLXXbdoDDpWxmqta10IQUdMXisMXOEyl+jos+YT9uBbzK4QaKYBjT3R0kTJO0Slw==
+
+typed@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/typed/-/typed-2.1.0.tgz#a55e9f13a477a064a614c1a4275af77863296917"
+  integrity sha512-mTdXq07T5cea4X2Zoy74gpk7CTSIlmdlpwICZwVh4Rlhu2jsjR1j3fTzUYLxsMfG0/aDeHJfDjQTc+b5fTyiAg==
+  dependencies:
+    rsts "^1.0.0"
 
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"
