@@ -79,6 +79,15 @@
   border-radius: 24px;
 }
 
+.section__background2{
+  height: 100vh;
+  background: linear-gradient(#202020, gray);
+}
+
+.section__background3{
+  height: 100vh;
+  background: linear-gradient(gray, white);
+}
 
 @media screen and (max-width:700px) {
 
