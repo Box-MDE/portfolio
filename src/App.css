@@ -1,11 +1,7 @@
-.bg{
-  background-color: black;
-  height: 100vh;
-  width: 100%;
-}
 
 .header .navbar {
-  background-color: transparent !important;
+  height: 5vh;
+  background-color: #202020;
 }
 
 .navbar-brand{
@@ -13,38 +9,74 @@
   margin-left: 5%;
 }
 
-.info{
-  padding-top: 5%;
-  margin-left: 6%;
-  display: flex;
+.section__background {
+  width: 100%;
+  height: 95vh;
+  background-color: #202020;
 }
 
-.title{
-  color: #11dfab;
+.background__assets {
+  width: 100%;
+  height: 95vh;
+  position: absolute;
 }
 
-.description{
-  padding-top: 3%;
-  color: white;
+.background__assets--back {
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/img/background__assets--back.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.button{
-  border-top-left-radius: 10% 50%;
-  border-top-right-radius: 10% 50%;
-  border-bottom-right-radius: 10% 50%;
-  border-bottom-left-radius: 10% 50%;
+.background__assets--circles {
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/img/background__assets--circles.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.rounded{
-  margin-left: 8%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background: #036d52;
+.background__assets--img {
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/img/background__assets--img.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.img{
-  border-radius: 50%;
+.background__info {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  top: 15%;
+  left: 10%;
+}
+
+.background__info--h1 {
+  color: #7BE495;
+  font-size: 2.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.background__info--p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  margin-bottom: 2.3rem;
+}
+
+.background__info--button {
+  margin: 0;
+  background: rgb(50,157,156);
+  background: linear-gradient(83deg, rgba(50,157,156,1) 0%, rgba(86,197,150,1) 100%);
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 24px;
 }
 
 @media screen and (max-width:600px) {
