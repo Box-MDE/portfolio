@@ -1,7 +1,9 @@
 import './App.css'
 import icon from './img/icon.png'
+import   Typed   from 'react-typed'
 
 function App() {
+
   return (
     <>
       <header className='header'>
@@ -20,7 +22,17 @@ function App() {
         </div>
 
         <div className='background__info'>
-            <h1 className='background__info--h1'>DESARROLLO<br></br>DE PAGINAS WEB</h1>
+            <h1 className='background__info--h1'>
+              <Typed
+                strings={['DESARROLLO <br> DE IDEAS.', 'DESARROLLO <br> DE EMOCIONES.', 'DESARROLLO <br> DE PAGINAS WEB.']}
+                typeSpeed={40}
+                smartBackspace={true}
+                backSpeed={25}
+                backDelay={1000}
+                loop={true}
+                startDelay={300}
+              />
+            </h1>
             <p className='background__info--p'>Comienza a invertir en tu negocio expandiendo<br></br>
             el alcance de tus ideas a través<br></br>
             de toda la web.</p>
