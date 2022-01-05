@@ -40,6 +40,14 @@ function App() {
         </div>
 
       </section>
+
+      <section className='section__background2'>
+        aqui iria mostrar lo q hacemos
+      </section>
+
+      <section className='section__background3'>
+        aqui iria contacto
+      </section>
     </>
   );
 }
