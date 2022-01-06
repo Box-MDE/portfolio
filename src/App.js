@@ -8,6 +8,10 @@ import TextField from '@mui/material/TextField'
 
 function App() {
 
+  /*const handleChange = (event) => {
+    setValue(event.target.value);
+  };*/
+
   return (
     <>
       <header className='header'>
@@ -40,9 +44,10 @@ function App() {
             <p className='background__info--p'>Comienza a invertir en tu negocio expandiendo<br></br>
             el alcance de tus ideas a través<br></br>
             de toda la web.</p>
-            <Link to="contacto"><button className="background__info--button">Cotiza tu página gratis</button></Link>
+            <div className='boton-cot'>
+              <Link to="contacto"><button className="background__info--button">Cotiza tu página gratis</button></Link>
+            </div>
         </div>
-
       </section>
 
       <section className='section__background2'>
@@ -51,11 +56,33 @@ function App() {
 
       <Element name="contacto">
         <section className='section__background3'>
+          <div className='title'>
+            <h1>CONTACTO</h1>
+          </div>
           <div className='contact'>
-            <div className='title'>
-              <h1>CONTACTO</h1>
+            <div className='redes'>
+              <div className='descrip-redes'>
+                <h4>Puedes comunicarte a través de nuestras líneas de atención.</h4>  
+                <div className='email'>
+                  <p>Para un mejor y personalizado contacto, envíanos un email.</p>
+                  <h6>boxmde2021@gmail.com</h6>
+                </div>
+                <div className='logos'>
+                  <div className='img'>
+                    <img src={icon}  alt='logo-box'/>
+                  </div>
+                  <div className='text'>
+                    <h5>THINKING OUT <br/> OF THE BOX</h5>
+                  </div>
+                </div> 
+              </div>        
             </div>
-              <Box
+
+            <div className='form'>
+              <div className='descrip-form'>
+                <h3>¿Cómo podemos ayudarte?</h3>
+              </div>
+            <Box
                 component="form"
                 sx={{
                   '& > :not(style)': { m: 1, width: '100%' },
@@ -63,7 +90,7 @@ function App() {
                 noValidate
                 autoComplete="off"
               >
-                <TextField id="filled-basic" label="Filled" variant="filled" />
+                <TextField id="filled-basic" label="Nombre" variant="filled" />
               </Box>
 
               <Box
@@ -71,10 +98,10 @@ function App() {
                 sx={{
                   '& > :not(style)': { m: 1, width: '100%' },
                 }}
-                noValidate
+                Validate
                 autoComplete="off"
               >
-                <TextField id="filled-basic" label="Filled" variant="filled" />
+                <TextField id="filled-basic" label="E-mail" variant="filled" type="email" />
               </Box>
 
               <Box
@@ -82,18 +109,40 @@ function App() {
                 sx={{
                   '& > :not(style)': { m: 1, width: '100%' },
                 }}
+                Validate
+                autoComplete="off"
+              >
+                <TextField id="filled-basic" label="Celular" variant="filled" type="tel" />
+              </Box>
+
+              <Box
+                component="form"
+                sx={{
+                  '& .MuiTextField-root': { m: 1, width: '100%' },
+                }}
                 noValidate
                 autoComplete="off"
               >
-                <TextField id="filled-basic" label="Filled" variant="filled" />
+                <TextField
+                  id="filled-textarea"
+                  label="Deja tu mensaje"
+                  placeholder="Escribe tu mensaje aquí..."
+                  multiline
+                  variant="filled"
+                />
               </Box>
 
               <button className="background__info--button">Submit</button>
+            </div>
+              
           </div>
         </section>
       </Element>
 
-      <Footer />
+      <div className='footer'>
+        <Footer />
+      </div>
+      
     </>
   );
 }
