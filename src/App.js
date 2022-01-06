@@ -1,6 +1,10 @@
 import './App.css'
 import icon from './img/icon.png'
 import   Typed   from 'react-typed'
+import { Element, Link } from 'react-scroll'
+import Footer from './components/Footer'
+import Box from '@mui/material/Box'
+import TextField from '@mui/material/TextField'
 
 function App() {
 
@@ -36,7 +40,7 @@ function App() {
             <p className='background__info--p'>Comienza a invertir en tu negocio expandiendo<br></br>
             el alcance de tus ideas a través<br></br>
             de toda la web.</p>
-            <button className="background__info--button">Cotiza tu página gratis</button>
+            <Link to="contacto"><button className="background__info--button">Cotiza tu página gratis</button></Link>
         </div>
 
       </section>
@@ -45,9 +49,51 @@ function App() {
         aqui iria mostrar lo q hacemos
       </section>
 
-      <section className='section__background3'>
-        aqui iria contacto
-      </section>
+      <Element name="contacto">
+        <section className='section__background3'>
+          <div className='contact'>
+            <div className='title'>
+              <h1>CONTACTO</h1>
+            </div>
+              <Box
+                component="form"
+                sx={{
+                  '& > :not(style)': { m: 1, width: '100%' },
+                }}
+                noValidate
+                autoComplete="off"
+              >
+                <TextField id="filled-basic" label="Filled" variant="filled" />
+              </Box>
+
+              <Box
+                component="form"
+                sx={{
+                  '& > :not(style)': { m: 1, width: '100%' },
+                }}
+                noValidate
+                autoComplete="off"
+              >
+                <TextField id="filled-basic" label="Filled" variant="filled" />
+              </Box>
+
+              <Box
+                component="form"
+                sx={{
+                  '& > :not(style)': { m: 1, width: '100%' },
+                }}
+                noValidate
+                autoComplete="off"
+              >
+                <TextField id="filled-basic" label="Filled" variant="filled" />
+              </Box>
+
+              <button className="background__info--button">Submit</button>
+          </div>
+        </section>
+      </Element>
+
+      <Footer />
     </>
   );
 }
