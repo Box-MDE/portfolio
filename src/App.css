@@ -90,6 +90,16 @@
   background: linear-gradient(gray, white);
 }
 
+.contact{
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.title{
+  padding-top: 2%;
+}
+
 @media screen and (max-width:700px) {
 
   .section__background{
