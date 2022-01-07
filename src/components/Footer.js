@@ -4,7 +4,8 @@ import '../styles/footer.css'
 const Footer = () => {
     return (
         <footer>
-            Este es el footer
+            Copyright © Box 2022
+            <p><span>THINKING OUT OF THE BOX</span></p>
         </footer>
     )
 }
