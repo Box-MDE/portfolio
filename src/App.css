@@ -1,6 +1,7 @@
 body{
   width: 100%;
   margin: 0;
+  position: relative;
 }
 
 .header .navbar {
@@ -152,7 +153,53 @@ body{
 }
 
 .footer{
-  margin-top: 100%;
+  margin-top: 10%;
+  bottom: 0;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.info-1{
+  text-align: center;
+  width: 80%;
+}
+
+.info-2{
+  width: 80%;
+  text-align: center;
+}
+
+.info-3{
+  width: 80%;
+  text-align: center;
+  border: 1px black solid;
+  padding-left: 0;
+}
+
+.info-title{
+  color: #7BE495;
+}
+
+.span-info{
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.img-info{
+  margin: 0;
+  width: 80%;
+  height: 100%;
+}
+
+.rel{
+  width: 100%;
 }
 
 @media screen and (max-width:780px) {
@@ -216,6 +263,24 @@ body{
     height: auto;
     padding-top: 5%;
     padding-bottom: 5%;
+  }
+
+  .content{
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .info-1{
+    margin-top: 5%;
+  }
+
+  .info-2{
+    margin-top: 10%;
+  }
+
+  .info-3{
+    margin-top: 10%;
   }
   
 }

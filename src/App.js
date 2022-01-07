@@ -5,6 +5,8 @@ import { Element, Link } from 'react-scroll'
 import Footer from './components/Footer'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
+import rwd from './img/rwd.png'
+//import elegant from './img/elegant.jpg'
 
 function App() {
 
@@ -51,7 +53,27 @@ function App() {
       </section>
 
       <section className='section__background2'>
-        aqui iria mostrar lo q hacemos
+        <div className='title'>
+          <h2 className='info-title'>DEJATE LLEVAR</h2>
+          <span className='span-info'>Nos destacamos por realizar una gran cantidad de diseños </span>
+        </div>
+        <div className='content'>
+          <div className='info-1'>
+            <div className='rel'>
+              <img className='img-info'src={rwd} alt='responsive design' />
+            </div>
+          </div>
+          <div className='info-2'>
+            <div className='rel'>
+              <img className='img-info'src={rwd} alt='responsive design' />
+            </div>
+          </div>
+          <div className='info-3'>
+            <div className='rel'>
+              <img className='img-info'src={rwd} alt='responsive design' />
+            </div>
+          </div>
+        </div>
       </section>
 
       <Element name="contacto">
@@ -136,12 +158,13 @@ function App() {
             </div>
               
           </div>
+          <div className='footer'>
+            <Footer />
+          </div>
         </section>
       </Element>
 
-      <div className='footer'>
-        <Footer />
-      </div>
+      
       
     </>
   );
