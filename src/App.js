@@ -5,6 +5,9 @@ import { Element, Link } from 'react-scroll'
 import Footer from './components/Footer'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
+import rwd from './img/rwd.png'
+import megafono from './img/megafono.png'
+import candado from './img/candado.png'
 
 function App() {
 
@@ -37,7 +40,7 @@ function App() {
                 smartBackspace={true}
                 backSpeed={25}
                 backDelay={1000}
-                loop={true}
+                loop={false}
                 startDelay={300}
               />
             </h1>
@@ -64,6 +67,7 @@ function App() {
           <div className='descrip'>
             <div className='info__title'>
               <h4>Diseño web adaptado a dispositivos móviles</h4>
+              <img className='img__descrip'src={rwd} alt='rwd' />
               <p className='parrafo'>
                 Todos nuestros proyectos cuentan con diferentes resoluciones para cada uno de los principales dispositivos:
                 Smartphones, Tablets y computadores.
@@ -73,6 +77,7 @@ function App() {
           <div className='descrip'>
             <div className='info__title'>
               <h4>Servicios de Marketing Digital y SEO</h4>
+              <img className='img__descrip'src={megafono} alt='megafono' />
               <p className='parrafo'>
                 Optimizamos el contenido de cada sitio web con el fin de incrementar el tráfico orgánico y así lograr 
                 posicionar la página entre las primeras búsquedas del navegador.
@@ -81,7 +86,12 @@ function App() {
           </div>
           <div className='descrip'>
             <div className='info__title'>
-              <h4>Diseño web adaptado a dispositivos móviles</h4>
+              <h4>Hosting y Dominio de alta seguridad</h4>
+              <img className='img__descrip'src={candado} alt='candado' />
+              <p className='parrafo'>
+                Nuestros proyectos van protegidos por medio del certificado de seguridad SSL, esto quiere decir que tendrán 
+                una conexión segura y confiable.
+              </p>
             </div>
           </div>
         </div>
