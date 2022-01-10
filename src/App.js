@@ -5,8 +5,6 @@ import { Element, Link } from 'react-scroll'
 import Footer from './components/Footer'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
-import rwd from './img/rwd.png'
-//import elegant from './img/elegant.jpg'
 
 function App() {
 
@@ -53,24 +51,29 @@ function App() {
       </section>
 
       <section className='section__background2'>
-        <div className='title'>
-          <h2 className='info-title'>DEJATE LLEVAR</h2>
-          <span className='span-info'>Nos destacamos por realizar una gran cantidad de diseños </span>
-        </div>
-        <div className='content'>
-          <div className='info-1'>
-            <div className='rel'>
-              <img className='img-info'src={rwd} alt='responsive design' />
+
+        <div className='box__info'>
+          <div className='descrip'>
+            <div className='info__title'>
+              <h4>Diseño web adaptado a dispositivos móviles</h4>
+              <p className='parrafo'>
+                Todos nuestros proyectos cuentan con diferentes resoluciones para cada uno de los principales dispositivos:
+                Smartphones, Tablets y computadores.
+              </p>
             </div>
           </div>
-          <div className='info-2'>
-            <div className='rel'>
-              <img className='img-info'src={rwd} alt='responsive design' />
+          <div className='descrip'>
+            <div className='info__title'>
+              <h4>Servicios de Marketing Digital y SEO</h4>
+              <p className='parrafo'>
+                Optimizamos el contenido de cada sitio web con el fin de incrementar el tráfico orgánico y así lograr 
+                posicionar la página entre las primeras búsquedas del navegador.
+              </p>
             </div>
           </div>
-          <div className='info-3'>
-            <div className='rel'>
-              <img className='img-info'src={rwd} alt='responsive design' />
+          <div className='descrip'>
+            <div className='info__title'>
+              <h4>Diseño web adaptado a dispositivos móviles</h4>
             </div>
           </div>
         </div>
