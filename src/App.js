@@ -52,6 +52,14 @@ function App() {
 
       <section className='section__background2'>
 
+      <div className='background__assets2'>
+        <div className='background__assets--back2'></div>
+      </div>
+      
+      <div className='title2'>
+        <h2>DESCUBRE LOS BENEFICIOS QUE TENEMOS PARA TI!</h2>
+      </div>
+      
         <div className='box__info'>
           <div className='descrip'>
             <div className='info__title'>
