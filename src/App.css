@@ -33,7 +33,7 @@ body{
 .background__assets--back {
   width: 100%;
   height: 100%;
-  background-image: url('/src/img/background__assets--back.svg');
+  background-image: url('/src/img/background__assets--back3.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,12 +106,12 @@ body{
 
 .background__assets--back2 {
   width: 100%;
-  height: 94%;
-  background-image: url('/src/img/background__assets--back.svg');
+  height: 100%;
+  background-image: url('/src/img/background__assets--back2.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transform: scaleY(-1);
+  transform: rotate(180deg);
 }
 
 .box__info {
@@ -126,7 +126,7 @@ body{
 
 .descrip{
   width: 100%;
-  padding: 3%;
+  padding: 1%;
   background-color: #202020;
   opacity: 0.9;
   text-align: center;
@@ -143,17 +143,23 @@ body{
   margin-top: 5%;
 }
 
+.parrafo2{
+  color: white;
+}
+
 .title2{
   position: absolute;
   width: 100%;
   padding-top: 5%;
 }
 
+
 /*-----SECTION 3-----*/
 
 .section__background3{
   height: 100vh;
   background: linear-gradient(gray, white);
+  padding-top: 5%;
 }
 
 .contact{
@@ -243,12 +249,20 @@ body{
     display: none;
   }
 
+  .background__assets--back{
+    background-image: url('/src/img/background__assets--back.svg');
+  }
+
   .background__info{
     padding: 5% 0%;
     width: 100%;
     top: 20%;
     left: 0;
     text-align: justify;
+  }
+
+  .background__info--button{
+    background: #212529;
   }
 
   .background__info--h1 {
@@ -283,6 +297,10 @@ body{
 
   /*-----SECTION 2-----*/
 
+  .background__assets--back2{
+    background-image: url('/src/img/background__assets--back.svg');
+  }
+
   .section__background2{
     width: 100%;
     height: auto;
@@ -296,7 +314,7 @@ body{
 
   .box__info{
     display: block;
-    padding-top: 20%;
+    padding-top: 60%;
   }
 
   .descrip{
