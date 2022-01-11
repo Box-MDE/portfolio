@@ -8,6 +8,7 @@ import TextField from '@mui/material/TextField'
 import rwd from './img/rwd.png'
 import megafono from './img/megafono.png'
 import candado from './img/candado.png'
+import setting from './img/setting.png'
 
 function App() {
 
@@ -60,7 +61,11 @@ function App() {
       </div>
       
       <div className='title2'>
-        <h2>DESCUBRE LOS BENEFICIOS QUE TENEMOS PARA TI!</h2>
+        <h2>CREA TU PAGINA WEB JUNTO A NOSOTROS</h2>
+        <p className='parrafo2'>
+          Nos encargamos de crear sitios web de alta calidad al mejor precio, por eso, te presentamos las <br/>
+          principales características que llevan cada uno de nuestros proyectos.  
+        </p>
       </div>
       
         <div className='box__info'>
@@ -89,8 +94,18 @@ function App() {
               <h4>Hosting y Dominio de alta seguridad</h4>
               <img className='img__descrip'src={candado} alt='candado' />
               <p className='parrafo'>
-                Nuestros proyectos van protegidos por medio del certificado de seguridad SSL, esto quiere decir que tendrán 
-                una conexión segura y confiable.
+                La seguridad de tu sitio web es primordial y por eso nos aseguramos que tu Hosting y Dominio cuenten con 
+                certificado SSL para una mejor experiencia.
+              </p>
+            </div>
+          </div>
+          <div className='descrip'>
+            <div className='info__title'>
+              <h4>Mantenimiento y Actualizaciones</h4>
+              <img className='img__descrip'src={setting} alt='candado' />
+              <p className='parrafo'>
+                Los mejores proyectos siempre deben estar al día, es así com te ofrecemos el asesoramiento necesario para 
+                errores y/o actualizaciones que mejoren la calidad de tu web.
               </p>
             </div>
           </div>
