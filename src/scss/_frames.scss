@@ -1,0 +1,48 @@
+
+@import './main';
+
+.section-info {
+    width: 100%;
+}
+
+.section-info__content-frames {
+
+    .content-frames__title {
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+
+    p {
+        width: 80%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    img {
+        margin-top: 2rem;
+    }
+}
+
+.content-frames__section-caract {
+    width: 80%;
+    margin: 0 auto;
+
+    .section-caract__title {
+        margin-top: 3rem;
+    }
+
+    .--margin {
+        margin-top: 0;
+    }
+
+    p {
+        color: lighten($blue, 8);
+        text-align: justify;
+    }
+
+    .section-caract__img {
+        width: 100%;
+        margin: 1rem auto;
+        height: fit-content;
+    }
+}
