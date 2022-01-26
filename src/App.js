@@ -16,13 +16,6 @@ import icon_marketing from './img/icons/icon_marketing.svg'
 import icon_domain from './img/icons/icon_domain.svg'
 import icon_settings from './img/icons/icon_settings.svg'
 
-// import icon from './img/icon.png'
-// import   Typed   from 'react-typed'
-// import { Element, Link } from 'react-scroll'
-// import Footer from './components/Footer'
-// import Box from '@mui/material/Box'
-// import TextField from '@mui/material/TextField'
-
 function App() {
 
   /*const handleChange = (event) => {
@@ -69,6 +62,7 @@ function App() {
               de los principales
               dispositivos; smartphones,
               tablets y computadores. </p>
+
           </div>
           <div className='content-frames__section-caract'>
             <h1 className='section-caract__title'>Servicios de Marketing Digital y SEO</h1>
@@ -128,90 +122,7 @@ function App() {
       <footer className='footer'>
         <p> © Copyright 2022. All rights reserved.</p>
       </footer>
-
-      {/* <section className='section__background3'>
-        <div className='title'>
-          <h1>CONTACTO</h1>
-        </div>
-        <div className='contact'>
-          <div className='redes'>
-            <div className='descrip-redes'>
-              <h4>Puedes comunicarte a través de nuestras líneas de atención.</h4>  
-              <div className='email'>
-                <p>Para un mejor y personalizado contacto, envíanos un email.</p>
-                <h6>boxmde2021@gmail.com</h6>
-              </div>
-              <div className='logos'>
-                <div className='img'>
-                  <img src={icon}  alt='logo-box'/>
-                </div>
-                <div className='text'>
-                  <h5>THINKING OUT <br/> OF THE BOX</h5>
-                </div>
-              </div> 
-            </div>        
-          </div>
-          <div className='form'>
-            <div className='descrip-form'>
-              <h3>¿Cómo podemos ayudarte?</h3>
-            </div>
-          <Box
-              component="form"
-              sx={{
-                '& > :not(style)': { m: 1, width: '100%' },
-              }}
-              noValidate
-              autoComplete="off"
-            >
-              <TextField id="filled-basic" label="Nombre" variant="filled" />
-            </Box>
-            <Box
-              component="form"
-              sx={{
-                '& > :not(style)': { m: 1, width: '100%' },
-              }}
-              Validate
-              autoComplete="off"
-            >
-              <TextField id="filled-basic" label="E-mail" variant="filled" type="email" />
-            </Box>
-            <Box
-              component="form"
-              sx={{
-                '& > :not(style)': { m: 1, width: '100%' },
-              }}
-              Validate
-              autoComplete="off"
-            >
-              <TextField id="filled-basic" label="Celular" variant="filled" type="tel" />
-            </Box>
-            <Box
-              component="form"
-              sx={{
-                '& .MuiTextField-root': { m: 1, width: '100%' },
-              }}
-              noValidate
-              autoComplete="off"
-            >
-              <TextField
-                id="filled-textarea"
-                label="Deja tu mensaje"
-                placeholder="Escribe tu mensaje aquí..."
-                multiline
-                variant="filled"
-              />
-            </Box>
-            <button className="background__info--button">Submit</button>
-          </div>
-            
-        </div>
-        <div className='footer'>
-          <Footer />
-        </div>
-      </section> */}
-
-      
-      
+ 
     </>
   );
 }

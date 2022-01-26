@@ -35,7 +35,9 @@
         margin-top: 0;
     }
 
-    p {
+    .section-caract__p {
+        width: 100%;
+        margin: 0 auto;
         color: lighten($blue, 8);
         text-align: justify;
     }
