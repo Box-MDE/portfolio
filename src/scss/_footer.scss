@@ -2,9 +2,14 @@
 @import './main';
 
 .footer {
-    width: 80%;
+    width: 100%;
+    height: 58vh;
     margin: 0 auto;
     text-align: center;
+    background-color: $lightGreen;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 
     p {
         font-size: 0.6rem;

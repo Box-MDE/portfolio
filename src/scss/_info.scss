@@ -1,0 +1,126 @@
+
+@import './main';
+
+.main {
+    width: 100%;
+}
+
+.section-description {
+    width: 80%;
+    margin: 5rem auto;
+
+    h1 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    p {
+        margin: 0;
+        color: lighten($black, 40);
+        text-align: justify;
+    }
+
+    @include Smartphone {
+        p {
+            text-align: center;
+        }
+    }
+
+    @include Tablet {
+        h1 {
+            font-size: 1.85rem;
+        }
+
+        p {
+            font-size: 1.15rem;
+        }
+    }
+
+    @include Laptop {
+        h1 {
+            font-size: 1.85rem;
+        }
+
+        p {
+            font-size: 1.15rem;
+        }
+    }
+}
+
+.section-info {
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    img {
+        max-width: 20rem;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .last--border {
+        max-width: 33rem;
+        border-radius: 0.6rem;       
+    }
+
+    .section-info__text {
+        text-align: justify;
+
+        h1 {
+            margin: 1rem auto;
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+            color: lighten($black, 40);
+        }
+    }
+
+    @include Smartphone {
+        p {
+            text-align: center;
+        }
+    }
+
+    @include Tablet {
+        img {
+            max-width: 25rem;
+        }
+
+        h1 {
+            font-size: 1.85rem;
+        }
+
+        p {
+            font-size: 1.15rem;
+        }
+    }
+
+    @include Laptop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+
+        img {
+            max-width: 35rem;
+            order: 1;
+        }
+
+        .order {
+            order: 2;
+        }
+
+        h1 {
+            font-size: 1.85rem;
+        }
+
+        p {
+            font-size: 1.15rem;
+            text-align: justify;
+        }
+    }
+}
