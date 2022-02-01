@@ -1,0 +1,112 @@
+
+@import './main';
+
+.contact {
+    width: 100%;
+    margin: 5rem auto;
+    text-align: center;
+
+    @include Tablet {
+        width: 100%;
+        height: 18vh;
+        margin-bottom: 6rem;
+        padding: 0 3rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2rem;
+
+    .contact-content__img {
+        display: none;
+
+        @include Tablet {
+            display: block;
+            flex-basis: 50%;
+
+            img {
+                max-width: 20rem;
+                height: fit-content;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .contact__text {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0.5rem 0;
+        color: $lightBlue;
+        display:flex;
+        flex-direction: column;
+        background-color: $white;
+        border-radius: 1.25rem;
+
+        a {
+            color: lighten($black, 40);
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        i {
+            color: lighten($black, 40);
+            font-style: normal;
+            font-size: 1rem;
+        }
+    }
+
+    .contact__icons {
+        width: 38%;
+        margin: 0 auto;
+        margin-top: 0.7rem;
+        color: $lightBlue;
+        font-size: 1.75rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contact-content__text {
+        background-color: $white;
+        border-radius: 1.25rem;
+        
+        input {
+            width: 100%;
+            border: none;
+            border: 0.1rem solid $lightGreen;
+            border-radius: 0.4rem;
+            margin-top: 0.8rem;
+            padding: 0.5rem;
+            outline-color: $lightBlue;
+        }
+
+        button {
+            border: none;
+            border-radius: 0.4rem;
+            background-color: $lightBlue;
+            padding: 0.5rem 1.5rem;
+            color: $white;
+            margin-top: 1.5rem;
+        }
+
+        @include Tablet {
+            flex-basis: 50%;
+            padding: 2rem 2rem;
+        }
+    }
+
+    @include Tablet {
+        width: 98%;
+        height: fit-content;
+        background-color: $grey;
+        border-radius: 1.25rem;
+        box-shadow: 0 0.25rem 0.6rem -0.2rem;
+    }
+
+    @include Laptop {
+        width: 70%;
+    }
+}
