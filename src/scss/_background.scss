@@ -28,7 +28,8 @@
     background-color: $lightGreen;
 
     @include Laptop {
-        display: none;
+        height: 30vh;
+        background-color: $lightGreen;
     }
 }
 

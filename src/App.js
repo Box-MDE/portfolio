@@ -10,6 +10,8 @@ import bg_img from './img/bg_img.png'
 import box_logo from './img/box_logo.svg'
 import desc_img from './img/desc_img.svg'
 import separator_1 from './img/separator_1.svg'
+import   Typed   from 'react-typed'
+import { Element, Link } from 'react-scroll'
 
 import {RiFacebookCircleFill} from "react-icons/ri";
 import {RiWhatsappFill} from "react-icons/ri";
@@ -38,10 +40,18 @@ function App() {
         <div className='section-background__content'>
           <div className='section-background__content-text'>
             <h1 className='content-text__title'>Desarrollamos tu pagina web profesionalmente.</h1>
-            <p className='content-text__p'>Comienza a invertir en tu negocio expandiendo
-              el alcance de tus ideas a traves 
-              de toda la web.</p>
-            <a href='section-contact' className='content-text__btn'>Cotiza tu pagina gratis!</a>
+            <p className='content-text__p'>
+              <Typed
+                strings={['Comienza a invertir en tu negocio expandiendo el alcance de tus ideas a traves de toda la web.']}
+                typeSpeed={30}
+                smartBackspace={true}
+                backSpeed={30}
+                backDelay={2000}
+                loop={true}
+                startDelay={100}
+              />
+            </p>
+            <Link to="contact" ><button className='content-text__btn'>Cotiza tu pagina gratis!</button></Link>
           </div>
           <div className='section-background__content-img'>
             <img src={bg_img} alt='web-design'></img>
@@ -130,7 +140,7 @@ function App() {
         <img className='separator last' src={separator_1} alt='separator'></img>
       </main>
 
-      <section className='contact'>
+      <Element className='contact'>
         <div className='contact-content'>
           <div className='contact-content__img'>
              <img src={icon_devices} alt='contact_img'></img>
@@ -154,7 +164,7 @@ function App() {
             <button>Enviar!</button>
           </div>
         </div>
-      </section>
+      </Element>
 
       <footer className='footer'>
         <div className='footer-text'>
