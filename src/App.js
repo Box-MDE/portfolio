@@ -7,15 +7,11 @@ import './scss/_contact.scss'
 import './scss/_footer.scss'
 import bg_img from './img/bg_img.png'
 import bg_waves from './img/bg_waves.svg'
-import box_logo from './img/box_logo.svg'
 import desc_img from './img/desc_img.svg'
 import separator_1 from './img/separator_1.svg'
-<<<<<<< HEAD
 import bg_circles from './img/bg_circles.svg'
-=======
 import   Typed   from 'react-typed'
 import { Element, Link } from 'react-scroll'
->>>>>>> f277731c158a69c604b38798fdc40455a56d078c
 
 import {RiFacebookCircleFill} from "react-icons/ri";
 import {RiWhatsappFill} from "react-icons/ri";
