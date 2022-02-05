@@ -18,21 +18,21 @@
 
 .contact-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 2rem 2rem;
 
     .contact-content__img {
-        display: none;
+        display: initial;
+
+        img {
+            max-width: 18rem;
+            height: fit-content;
+            margin-bottom: 1rem;
+        }
 
         @include Tablet {
             display: block;
-            flex-basis: 50%;
-
-            img {
-                max-width: 20rem;
-                height: fit-content;
-                margin-bottom: 1rem;
-            }
+            flex-basis: 50%; 
         }
     }
 
@@ -60,13 +60,24 @@
     }
 
     .contact__icons {
-        width: 38%;
+        max-width: 20rem;
         margin: 0 auto;
         margin-top: 0.7rem;
+        margin-bottom: 1.5rem;
+        padding: 0.5rem 0.5rem;
         color: $lightBlue;
+        background-color: $grey;
+        border-radius: 1.25rem;
         font-size: 1.75rem;
         display: flex;
         justify-content: space-evenly;
+
+        @include Tablet {
+            width: 48%;
+            background-color: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
     }
 
     .contact-content__text {
@@ -99,8 +110,9 @@
     }
 
     @include Tablet {
-        width: 98%;
+        width: 95%;
         height: fit-content;
+        flex-direction: row;
         background-color: $grey;
         border-radius: 1.25rem;
         box-shadow: 0 0.25rem 0.6rem -0.2rem;

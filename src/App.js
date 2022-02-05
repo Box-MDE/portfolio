@@ -1,15 +1,15 @@
 
 import './scss/_main.scss'
-import './scss/_header.scss'
 import './scss/_background.scss'
 import './scss/_desc.scss'
 import './scss/_info.scss'
 import './scss/_contact.scss'
 import './scss/_footer.scss'
 import bg_img from './img/bg_img.png'
-import box_logo from './img/box_logo.svg'
+import bg_waves from './img/bg_waves.svg'
 import desc_img from './img/desc_img.svg'
 import separator_1 from './img/separator_1.svg'
+import bg_circles from './img/bg_circles.svg'
 import   Typed   from 'react-typed'
 import { Element, Link } from 'react-scroll'
 
@@ -31,12 +31,8 @@ function App() {
 
   return (
     <>
-      <header className='header'>
-        <img src={box_logo} alt='box_logo'></img>
-        <h3 className='header__title'>Box Solutions</h3>
-      </header>
-
       <section className='section-background'>
+        <img className='section-background__circles' src={bg_circles} alt='bg-circles'></img>
         <div className='section-background__content'>
           <div className='section-background__content-text'>
             <h1 className='content-text__title'>Desarrollamos tu pagina web profesionalmente.</h1>
@@ -58,9 +54,10 @@ function App() {
           </div>
         </div>
       </section>
-      <div className='section-background__border'> 
 
-      </div>
+      <img className='section-background__waves' src={bg_waves} alt='waves'></img>
+          <div className='section-background__border'> 
+          </div>
 
       <main className='main'>
         <section className='section-description'>
